@@ -69,7 +69,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                 $hp = '62'.substr(trim($nohp),1);
         }
          elseif(substr(trim($nohp), 0, 2)=='62'){
-            $hp = '6'.substr(trim($nohp), 1);
+            $hp = '6'.substr(trim($nohp), 1); 
         }
         else{
             $hp = '1'.substr(trim($nohp),0,13);
